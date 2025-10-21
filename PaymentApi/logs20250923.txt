@@ -1,0 +1,46 @@
+2025-09-23 19:17:39.924 -03:00 [INF] Now listening on: http://localhost:5128
+2025-09-23 19:17:39.967 -03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-09-23 19:17:40.193 -03:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2025-09-23 19:17:40.197 -03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2025-09-23 19:17:40.275 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 19:17:40.278 -03:00 [INF] Hosting environment: Development
+2025-09-23 19:17:40.285 -03:00 [INF] Content root path: C:\Users\helen\Documents\Projetos\PaymentApi\PaymentApi
+2025-09-23 19:17:40.606 -03:00 [INF] Server helena-luz:3560:770c5b32 successfully announced in 326,7269 ms
+2025-09-23 19:17:40.618 -03:00 [INF] Server helena-luz:3560:770c5b32 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2025-09-23 19:17:40.944 -03:00 [INF] Server helena-luz:3560:770c5b32 all the dispatchers started
+2025-09-23 19:17:41.880 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5128/swagger/index.html - null null
+2025-09-23 19:17:42.315 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5128/swagger/index.html - 200 null text/html;charset=utf-8 449.9165ms
+2025-09-23 19:17:42.343 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5128/_vs/browserLink - null null
+2025-09-23 19:17:42.343 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5128/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 19:17:42.381 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5128/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 39.3451ms
+2025-09-23 19:17:42.458 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5128/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.6764ms
+2025-09-23 19:17:42.519 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5128/swagger/v1/swagger.json - null null
+2025-09-23 19:17:42.542 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5128/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.6091ms
+2025-09-23 19:17:59.450 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5128/api/Payments - application/json 38
+2025-09-23 19:17:59.481 -03:00 [INF] Executing endpoint 'PaymentApi.Controllers.PaymentsController.Create (PaymentApi)'
+2025-09-23 19:17:59.521 -03:00 [INF] Route matched with {action = "Create", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(PaymentApi.Models.Payment) on controller PaymentApi.Controllers.PaymentsController (PaymentApi).
+2025-09-23 19:18:00.201 -03:00 [INF] Executing action method PaymentApi.Controllers.PaymentsController.Create (PaymentApi) - Validation state: "Valid"
+2025-09-23 19:18:00.703 -03:00 [INF] Executed action method PaymentApi.Controllers.PaymentsController.Create (PaymentApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 493.8044ms.
+2025-09-23 19:18:00.724 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'PaymentApi.Models.Payment'.
+2025-09-23 19:18:00.793 -03:00 [INF] Executed action PaymentApi.Controllers.PaymentsController.Create (PaymentApi) in 1262.436ms
+2025-09-23 19:18:00.798 -03:00 [INF] Executed endpoint 'PaymentApi.Controllers.PaymentsController.Create (PaymentApi)'
+2025-09-23 19:18:00.804 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5128/api/Payments - 201 null application/json; charset=utf-8 1354.701ms
+2025-09-23 19:18:00.806 -03:00 [INF] Processando pagamento 68d31c98e03fdc1b29ad56da
+2025-09-23 19:18:06.360 -03:00 [INF] Evento PaymentProcessed publicado no RabbitMQ para 68d31c98e03fdc1b29ad56da
+2025-09-23 19:18:06.362 -03:00 [INF] Pagamento 68d31c98e03fdc1b29ad56da atualizado para "Processado"
+2025-09-23 19:19:21.260 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5128/api/Payments - application/json 38
+2025-09-23 19:19:21.266 -03:00 [INF] Executing endpoint 'PaymentApi.Controllers.PaymentsController.Create (PaymentApi)'
+2025-09-23 19:19:21.270 -03:00 [INF] Route matched with {action = "Create", controller = "Payments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(PaymentApi.Models.Payment) on controller PaymentApi.Controllers.PaymentsController (PaymentApi).
+2025-09-23 19:19:21.282 -03:00 [INF] Executing action method PaymentApi.Controllers.PaymentsController.Create (PaymentApi) - Validation state: "Valid"
+2025-09-23 19:19:21.293 -03:00 [INF] Executed action method PaymentApi.Controllers.PaymentsController.Create (PaymentApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 7.8041ms.
+2025-09-23 19:19:21.293 -03:00 [INF] Processando pagamento 68d31ce9e03fdc1b29ad56db
+2025-09-23 19:19:21.297 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'PaymentApi.Models.Payment'.
+2025-09-23 19:19:21.300 -03:00 [INF] Executed action PaymentApi.Controllers.PaymentsController.Create (PaymentApi) in 24.0752ms
+2025-09-23 19:19:21.302 -03:00 [INF] Executed endpoint 'PaymentApi.Controllers.PaymentsController.Create (PaymentApi)'
+2025-09-23 19:19:21.305 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5128/api/Payments - 201 null application/json; charset=utf-8 45.2863ms
+2025-09-23 19:19:26.328 -03:00 [INF] Evento PaymentProcessed publicado no RabbitMQ para 68d31ce9e03fdc1b29ad56db
+2025-09-23 19:19:26.331 -03:00 [INF] Pagamento 68d31ce9e03fdc1b29ad56db atualizado para "Processado"
